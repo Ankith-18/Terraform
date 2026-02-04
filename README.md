@@ -1,28 +1,40 @@
-# 🚀 AWS EC2 Creation Using Terraform
+🚀 AWS EC2 Provisioning Using Terraform
 
-This project demonstrates how to **create an EC2 instance on AWS using Terraform**.  
-The infrastructure is defined as code in a single `main.tf` file and managed using Terraform.
+This project demonstrates how to provision an AWS EC2 instance using Terraform with secure SSH key-based access and automated instance initialization.
 
----
+All infrastructure is managed using Infrastructure as Code (IaC) principles.
 
-## 📌 Project Overview
+📌 Features
 
-Terraform is used to provision an **AWS EC2 instance** in an automated and repeatable way.  
-This repository contains the Terraform configuration required to create the instance.
+✅ EC2 instance creation using Terraform
+✅ SSH key authentication (no passwords)
+✅ Automated setup using user-data script
+✅ Secure handling of Terraform state files
+✅ GitHub-based infrastructure versioning
 
-> ⚠️ Only the `main.tf` file is uploaded to GitHub.  
-> Terraform state files are kept local and not committed for security reasons.
+🛠️ Tech Stack
+Tool	Purpose
+Terraform	Infrastructure provisioning
+AWS EC2	Cloud compute instance
+SSH Keys	Secure authentication
+GitHub	Version control
 
----
+<img width="803" height="290" alt="image" src="https://github.com/user-attachments/assets/b2c67f1a-3460-4b35-869f-299a6ae3e5e0" />
 
-## 🛠️ Tech Stack
+🚀 How to Deploy
+1️⃣ Configure AWS Credentials
+aws configure
 
-- **Infrastructure as Code:** Terraform  
-- **Cloud Provider:** AWS  
-- **Operating System:** Ubuntu  
-- **Version Control:** Git & GitHub  
+2️⃣ Initialize Terraform
+terraform init
 
----
+3️⃣ Preview Infrastructure
+terraform plan
 
-## 📂 Project Structure
+4️⃣ Create EC2 Instance
+terraform apply
 
+5️⃣ Connect via SSH
+ssh -i your-key.pem ubuntu@<EC2_PUBLIC_IP>
+
+Terraform project to provision AWS EC2 using SSH authentication & automated scripts
