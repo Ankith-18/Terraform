@@ -4,12 +4,14 @@ This project demonstrates how to provision an AWS EC2 instance using Terraform w
 
 All infrastructure is managed using Infrastructure as Code (IaC) principles.
 
-📌 Features
-✅ EC2 instance creation using Terraform
-✅ SSH key authentication (no passwords)
-✅ Automated setup using user-data script
-✅ Secure handling of Terraform state files
-✅ GitHub-based infrastructure versioning
+## 📌 Features
+
+-  EC2 instance creation using Terraform  
+-  SSH key authentication (no passwords)  
+-  Automated setup using user-data scripts  
+-  Secure handling of Terraform state files  
+-  GitHub-based infrastructure versioning  
+
 
 🛠️ Tech Stack
 Tool	Purpose
@@ -22,19 +24,20 @@ GitHub	Version control
 
 🚀 How to Deploy
 1️⃣ Configure AWS Credentials
-    aws configure
+   - aws configure
 
 2️⃣ Initialize Terraform
-    terraform init
+   - terraform init
 
 3️⃣ Preview Infrastructure
-    terraform plan
+   - terraform plan
 
 4️⃣ Create EC2 Instance
-    terraform apply
+   - terraform apply
 
 5️⃣ Connect via SSH
-    ssh -i your-key.pem ubuntu@<EC2_PUBLIC_IP>
+   -  ssh -i your-key.pem ubuntu@<EC2_PUBLIC_IP>
 
 Terraform project to provision AWS EC2 using SSH authentication & automated scripts
+
 
